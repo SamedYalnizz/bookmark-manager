@@ -126,8 +126,6 @@ function deleteBookmark(url) {
     // Update bookmarks array in localStorage, re-populate DOM
     localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
     fetchBookmarksFromLocalStorage();
-
-    console.log('delete url:', url);
 }
 
 // Event Listener
