@@ -117,6 +117,7 @@ function storeBookmark(event){
 
 // Delete Bookmark
 function deleteBookmark(url) {
+    //Inefficient data structure
     bookmarks.forEach((bookmark, i) =>{
         if(bookmark.url === url){
             bookmarks.splice(i, 1);
